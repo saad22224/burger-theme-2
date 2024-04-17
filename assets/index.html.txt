@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+Elevate your dining experience with our savory sides and snacks
+Quench your thirst with our refreshing beverage selection
+
+"Get ready for payday perks! Score a sweet 10% discount on all orders this week. Treat yourself and save big—order now!
+    <!--  Swiper's CSS -->
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>responsive || burger website</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+
+    <main>
+    <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+
+    </main>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer>
+    
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+  
+  <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+
+  </body>
+</html>

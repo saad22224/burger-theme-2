@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+  <link rel="shortcut icon" href="img\favicon.png" type="image/x-icon">
+  <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!--  Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+  <link href="css/input.css" rel="stylesheet">
+  <title>responsive || burger website</title>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+<div class="overlay" id="overlay">
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/3190f644-84d0-4b84-bcab-0b2b2e82df6c/g3PAwrn5fr.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+</div>
+
+<body class="tracking-wider">
+  <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+  <header class="fixed top-0 left-0 w-full z-50 " id="header" style="background-color: rgb(255, 145, 0);">
+    <nav class="container relative h-14 flex justify-between items-center w-[90%] mx-auto">
+      <!-- logo -->
+      <div>
+        <a href="" class="text-2xl uppercase logo select-none">
+          Bur<span class="text-[#fde047]">ger</span>
+        </a>
+      </div>
+      <!-- links -->
+      <div class="absolute top-0 left-0 w-full py-14 border-b border-[#777] hidden md:block md:static md:py-0
+      md:border-none md:w-auto md:ml-auto link" id="nav">
+        <ul class="flex flex-col items-center gap-5 md:flex-row">
+          <li><a href="#home" class="hover:text-[#fde047] ease-in duration-200" id="saad">Home</a></li>
+          <li><a href="#about" class="hover:text-[#fde047]  ease-in duration-200" id="saad">About Us</a></li>
+          <li><a href="#menu" class="hover:text-[#fde047]  ease-in duration-200" id="saad">Menu</a></li>
+          <li><a href="#review" class="hover:text-[#fde047]  ease-in duration-200" id="saad">Review</a></li>
+          <li><a href="#contact" class="hover:text-[#fde047]  ease-in duration-200" id="saad">Contact</a></li>
+        </ul>
+        <div class="absolute top-[0.7rem] right-4 cursor-pointer ">
+          <i class="ri-close-line  md:hidden text-2xl" id="close"></i>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-5 ">
+        <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="moon"></i>
+        <div class="hamp  md:hidden">
+          <i class="ri-menu-2-line  cursor-pointer ml-4 text-xl"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+    <section id="home" class="pt-16 pb-4 md:pt-20">
+      <div class="container w-[83%] mx-auto flex flex-col items-center gap-10 md:flex-row md:gap-15">
+        <div class="mx-auto md:basis-1/2 lg:basis-2/5">
+          <img src="img/home-image.png" alt="home-image" class="sm:w-60 md:w-full  lg:w-full select-none relative"
+            style=" animation:infinite  ease-in 2s  up-down ">
+        </div>
+        <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <h1 class="text-4xl font-bold uppercase lg:text-6xl ">HAPPY TUMMY WITH TASTY BURGERS</h1>
+          <div class="w-28 h-[2px] bg-[#fde047] mx-auto my-5 md:mx-0"></div>
+          <p class="text-white text-xs leading-5">Welcome to our burger haven! Where every bite tells a
+            story of flavor and satisfaction. Join us on a culinary journey</p>
+          <div class="text-base flex items-center justify-center gap-4 py-10  md:justify-start md:gap-20">
+            <div class="text-center">
+              <i class="fa-solid fa-utensils text-[#fde047] text-4xl"></i>
+              <br />
+              Delicious
+            </div>
+            <div class="text-center">
+              <i class="fa-solid fa-droplet text-[#fde047] text-4xl"></i>
+              <br />
+              Fresh
+            </div class="text-center">
+            <div>
+              <i class="fa-brands fa-envira text-[#fde047] text-4xl"></i>
+              <br />
+              Organic
+            </div>
+          </div>
+          <a href="" class="inline-block text-sm py-3 px-8 text-center cursor-pointer rounded-md ease-linear  duration-200
+           text-black bg-[#fde047] hover:bg-green-500 hover:text-white text-xl ">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
+    <section id="category" class="pt-[20px] pb-[50px]">
+      <div class="container mx-auto w-[83%] flex flex-col gap-5 md:flex-row">
+        <!-- card 1 -->
+        <div class="bg-yellow-500 flex py-3 rounded-lg overflow-hidden flex-1">
+          <div class="basis-1/3 relative select-none">
+            <img src="img/burger-1.png" alt=""
+              class="absolute w-28 -bottom-4 -left-4  md:w-60 md:-bottom-2 md:-left-2 lg:-left-4 lg:-bottom-4">
+          </div>
+
+          <div>
+            <div class="mb-2">
+              <h4 class="text-xl font-bold uppercase lg:text-2xl">food</h4>
+              <p class="">Celebrate flavor with our mouthwatering burger creations</p>
+            </div>
+            <a href="#" class="text-black">Buy online</a>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-red-700 flex py-3 rounded-lg overflow-hidden  flex-1">
+          <div class="basis-1/3 relative select-none">
+            <img src="img/snack-1.png" alt=""
+              class="absolute w-28 -bottom-4 -left-4  md:w-60 md:-bottom-2 md:-left-2  lg:-left-4 lg:-bottom-4">
+          </div>
+
+          <div>
+            <div class="mb-2">
+              <h4 class="text-xl font-bold uppercase lg:text-2xl">snack</h4>
+              <p class="">Elevate your dining experience with our savory sides and snacks
+              </p>
+            </div>
+            <a href="#" class="text-yellow-500">Buy online</a>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="bg-green-700 flex py-3 rounded-lg overflow-hidden  flex-1">
+          <div class="basis-1/3 relative select-none">
+            <img src="img/beverage-2.png" alt=""
+              class="absolute w-28 -bottom-4 -left-4 md:w-60 md:-bottom-2 md:-left-2  lg:-left-4 lg:-bottom-4">
+          </div>
+
+          <div>
+            <div class="mb-2">
+              <h4 class="text-xl font-bold uppercase lg:text-2xl">beverage</h4>
+              <p class="">Quench your thirst with our refreshing beverage selection
+              </p>
+            </div>
+            <a href="#" class="text-yellow-500">Buy online</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+    <section id="promo" class="pt-[10px] pb-[20px]">
+      <div class="container mx-auto w-[83%] flex flex-col gap-5 lg:flex-row ">
+        <!-- card 1 -->
+        <div class="card flex flex-col  p-5 rounded-lg md:flex-row gap-10 md:items-center lg:flex-row-reverse 
+    lg:flex-1" id="pimpo">
+          <img src="img/promo-1.png" alt="" class="w-40 mx-auto migo md:mx-5 select-none">
+
+          <div class="space-y-2 pt-5  md:pt-0 lg:w-[33vw]">
+            <p class="text-xs text-yellow-300">Payday Promo</p>
+            <h3 class="uppercase ">get a 10% discount on payday week </h3>
+            <p>Enjoy 10% off this payday week! Treat yourself to savings on all orders. Don't miss out—order now!</p>
+            <a href="" class="text-xs  text-yellow-300">Buy Online</a>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="card flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse 
+    lg:flex-1" id="pimpo">
+          <img src="img/promo-2.png" alt="" class="w-40 mx-auto migo md:mx-5 select-none">
+
+          <div class="space-y-2 pt-5 md:pt-0 lg:w-[33vw]">
+            <p class="text-xs text-yellow-300">Payday Promo</p>
+            <h3 class="uppercase ">get a 10% discount on payday week </h3>
+            <p>Get ready for payday perks! Score a sweet 10% discount on all orders this week. order now!
+            </p>
+            <a href="" class="text-xs  text-yellow-300">Buy Online</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+    <section id="about" class="pt-[25px] pb-[15px]">
+      <div class="container mx-auto w-[83%] flex flex-col gap-10 md:flex-row">
+        <div class="flex-1 md:h-full md:w-full">
+          <img src="img/about.jpg" alt="about-image" class="rounded-lg select-none">
+        </div>
+        <div class="md:w-[50%]">
+          <h2 class="uppercase text-3xl font-bold uppercase lg:text-4xl">find food and drinks, all-in-one place for your
+            best taste</h2>
+          <div class="separator bg-yellow-300 w-[50%] h-[2px] my-[15px]"></div>
+          <p class="text-xs text-gray-200">
+            Welcome to Burger! We're not just a restaurant; we're a
+            destination for unique flavors and rich dining experiences. Our
+            menu boasts diverse options, with a special focus on mouthwatering,
+            fresh burgers. Our dedicated team is committed to delivering exceptional
+            service, ensuring every visit is unforgettable. Join us on
+            a journey of delicious flavors and memorable moments. Welcome to the Burger family!
+          </p>
+          <ul class="grid grid-cols-2 py-5 space-y-1">
+            <li class="text-xs">
+              <i class="fa-solid fa-check  text-yellow-300"></i>
+
+              Best Price
+            </li>
+            <li class="text-xs">
+              <i class="fa-solid fa-check text-yellow-300"></i>
+
+              Fresh Ingredient
+            </li>
+            <li class="text-xs">
+              <i class="fa-solid fa-check text-yellow-300"></i>
+
+              Best Service
+            </li>
+            <li class="text-xs">
+              <i class="fa-solid fa-check text-yellow-300"></i>
+
+              Health Protocol
+            </li>
+          </ul>
+          <a href="" class="inline-block text-sm py-3 px-6 text-center cursor-pointer rounded-md ease-linear  duration-200
+            text-black bg-[#fde047] hover:bg-green-500 hover:text-white text-xl">About Us</a>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+    <secton id="menu" class="pt-[30px]">
+      <div class="container mx-auto w-[83%]">
+        <div class="max-w-md mx-auto text-center pt-[20px] mt-[40px]">
+          <h2 class="uppercase text-3xl font-bold uppercase lg:text-4xl">our best menu</h2>
+          <div class="separator bg-yellow-300 w-[30%] h-[2px] my-[15px] mx-auto"></div>
+          <p> Our menu is a symphony of delectable dishes crafted to delight your senses and leave you craving for more
+          </p>
+          <div class="taps">
+            <ul class="flex gap-3 justify-center flex-wrap py-10">
+              <li class="inline-block text-sm py-3 px-6 text-center cursor-pointer rounded-md active
+      bg-[#0000ff]" data-taps="all">All</li>
+              <li class="inline-block text-sm py-3 px-6 text-center cursor-pointer rounded-md 
+       bg-[#0000ff] " data-taps="food">Food</li>
+              <li class="inline-block text-sm py-3 px-6 text-center cursor-pointer rounded-md
+     bg-[#0000ff]" data-taps="snack">Snack</li>
+              <li class="inline-block text-sm py-3 px-6 text-center cursor-pointer rounded-md 
+     bg-[#0000ff] ;" data-taps="Beverage">Beverage</li>
+            </ul>
+
+          </div>
+
+
+        </div>
+        <div>
+          <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 lg:h-40">
+            <!-- food -->
+            <li class="item-wrap food">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/burger-1.png" alt=""
+                  class="w-40  md:w-48 group-hover:scale-[1.1] ease-linear duration-200 select-none">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl lg:text-xl">regular beef burger</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$42.00</p>
+              </div>
+            </li>
+            <li class="item-wrap food">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/burger-2.png" alt=""
+                  class="w-40 md:w-48  group-hover:scale-[1.1] select-none ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl lg:text-xl">regular beef burger</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$46.00</p>
+              </div>
+            </li>
+            <li class="item-wrap food">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/burger-3.png" alt=""
+                  class="w-40 md:w-48 select-none  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl lg:text-xl">regular beef burger</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$50.00</p>
+              </div>
+            </li>
+            <li class="item-wrap food">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/burger-4.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">regular beef burger</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$59.99</p>
+              </div>
+            </li>
+            <li class="item-wrap food">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/burger-5.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">regular beef burger</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$60.99</p>
+              </div>
+            </li>
+            <!-- snack -->
+            <li class="item-wrap snack">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/snack-1.png" alt=""
+                  class="w-40  md:w-48 select-none group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">french fries</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$25.00</p>
+              </div>
+            </li>
+            <li class="item-wrap snack">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/snack-2.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">french fries</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$15.00</p>
+              </div>
+            </li>
+            <li class="item-wrap snack">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/snack-3.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">french fries</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$12.00</p>
+              </div>
+            </li>
+            <li class="item-wrap snack">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/snack-4.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">french fries</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$17.00</p>
+              </div>
+            </li>
+            <li class="item-wrap snack">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/snack-5.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">french fries</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$30.00</p>
+              </div>
+            </li>
+            <li class="item-wrap snack">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/snack-6.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">french fries</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$14.00</p>
+              </div>
+            </li>
+            <!-- bevarege -->
+            <li class="item-wrap beverage">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/beverage-1.png" alt=""
+                  class="w-40 select-none  md:w-48  group-hover:scale-[1.1] ease-linear duration-200 h-40">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">sweet smoothie</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$21.00</p>
+              </div>
+            </li>
+            <li class="item-wrap beverage">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/beverage-2.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">sweet smoothie</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$13.00</p>
+              </div>
+            </li>
+            <li class="item-wrap beverage">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/beverage-3.png" alt=""
+                  class="w-40 h-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">sweet smoothie</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$15.00</p>
+              </div>
+            </li>
+            <li class="item-wrap beverage">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/beverage-4.png" alt=""
+                  class="w-40 select-none md:w-48 h-40   group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">sweet smoothie</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$5.00</p>
+              </div>
+            </li>
+            <li class="item-wrap beverage">
+              <div
+                class="h-56 grid place-items-center card rounded-3xl hover:bg-yellow-300 duration-200 ease-linear group">
+                <img src="img/beverage-5.png" alt=""
+                  class="w-40 select-none md:w-48  group-hover:scale-[1.1] ease-linear duration-200">
+              </div>
+              <div class="pt-5">
+                <div class="mb-2">
+                  <h4 class="uppercase text-2xl  lg:text-xl">sweet smoothie</h4>
+                  <p>
+                    Delicious burgers crafted with care.</p>
+                </div>
+                <p class="text-yellow-300">$2.99</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </secton>
+    <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+    <section id="review" class="mt-[5%] lg:mt-[155%] xl:mt-[120%] bg-[#0606b5] py-20">
+      <div class="container mx-auto w-[83%]">
+        <div class="max-w-md mx-auto text-center pt-[20px] mt-[40px]">
+          <h2 class="uppercase text-3xl font-bold uppercase lg:text-4xl tracking-wider">customer review</h2>
+          <div class="separator bg-yellow-300 w-[30%] h-[2px] my-[15px] mx-auto"></div>
+          <p> Discover Our Guests' Experiences</p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper py-10">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-[#030375] rounded-lg p-6">
+                <p>burger where each dish is a masterpiece </p>
+                <div class="flex items-center ">
+                  <img src="img/review-1.jpg" alt="" class="w-12 h-12 rounded-full select-none">
+                  <div class="ml-2">
+                    <p class="zbon">jonn doe</p>
+                    <p class="text-yellow-300">lawyer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-yellow-300 ml-auto"></i>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-[#030375] rounded-lg p-6">
+                <p>burger where each dish is a masterpiece </p>
+                <div class="flex items-center ">
+                  <img src="img/review-2.jpg" alt="" class="w-12 h-12 rounded-full select-none">
+                  <div class="ml-2">
+                    <p class="zbon"> marie waterson</p>
+                    <p class="text-yellow-300">doctor</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-yellow-300 ml-auto"></i>
+                </div>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-[#030375] rounded-lg p-6">
+                <p>burger where each dish is a masterpiece </p>
+                <div class="flex items-center ">
+                  <img src="img/review-3.jpg" alt="" class="w-12 h-12 rounded-full select-none">
+                  <div class="ml-2">
+                    <p class="zbon">tomas clarck</p>
+                    <p class="text-yellow-300">engineer</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-yellow-300 ml-auto"></i>
+                </div>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-[#030375] rounded-lg p-6">
+                <p>burger where each dish is a masterpiece </p>
+                <div class="flex items-center ">
+                  <img src="img/review-4.jpg" alt="" class="w-12 h-12 rounded-full select-none">
+                  <div class="ml-2">
+                    <p class="zbon">camilia henderson</p>
+                    <p class="text-yellow-300">actress</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-yellow-300 ml-auto"></i>
+                </div>
+              </div>
+            </div>
+            <!-- slide 5 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-5 bg-[#030375] rounded-lg p-6">
+                <p>burger where each dish is a masterpiece </p>
+                <div class="flex items-center ">
+                  <img src="img/review-5.jpg" alt="" class="w-12 h-12 rounded-full select-none">
+                  <div class="ml-2">
+                    <p class="zbon">peter brown</p>
+                    <p class="text-yellow-300">journalist</p>
+                  </div>
+                  <i class="fa-solid fa-quote-right text-4xl text-yellow-300 ml-auto"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+    <section id="contact" class="mt-[30px] bg-yellow-300 py-16">
+      <div class="container mx-auto w-[83%] flex flex-col gap-5 md:items-center md:flex-row">
+        <div class="space-y-4 md:flex-1">
+          <h2 class="uppercase text-3xl font-bold uppercase lg:text-4xl tracking-wider text-black">get exclusive update
+          </h2>
+          <p class="text-sm text-black">Stay tuned for updates</p>
+        </div>
+        <div class="flex flex-col gap-3 md:flex-row md:flex-1">
+          <input type="email" placeholder="email addresse" class="p-2 text-black rounded-lg md:w-full outline-none">
+          <a href="" class="flex text-xl items-center justify-center gap-2 bg-black py-2 lg:px-6 
+      rounded-lg hover:bg-white hover:text-black sub">
+            <i class="fa-solid fa-paper-plane"></i>
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+  <footer>
+    <section class="footer pt-5">
+      <div class="container mx-auto w-[83%]">
+        <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+          <li>
+            <div class="space-y-3">
+              <a href="" class="text-4xl uppercase foot">
+                bur<span class="text-yellow-300">ger</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg uppercase sop">support</h3>
+              <a href="" class="text-xs hover:text-yellow-300 uppercase">
+                faq`s
+              </a>
+              <a href="" class="text-xs hover:text-yellow-300 uppercase">
+                privacy policy
+              </a>
+              <a href="" class="text-xs hover:text-yellow-300 uppercase">
+                term&condition
+              </a>
+              <a href="" class="text-xs hover:text-yellow-300 uppercase">
+                contact
+              </a>
+            </div>
+          </li>
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase sop">
+                phone
+              </h3>
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-phone text-yellow-300"></i>
+                +20 1556477029
+              </p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase sop">
+                email
+              </h3>
+              <p class="flex items-center gap-2 text-xs">
+                <i class="fa-solid fa-envelope text-yellow-300"></i>
+                qwejtrs@gmail.com
+              </p>
+            </div>
+          </li>
+          <li class="space-y-8">
+            <div class="space-y-2">
+              <h3 class="text-lg uppercase sop">
+                addresse
+              </h3>
+              <p class="flex items-center gap-2 text-xs text-yellow-300">
+                <i class="fa-solid fa-location-dot"></i>
+                itay elbaruad
+              </p>
+            </div>
+            <h3 class="uppercase">follow us on </h3>
+            <div>
+              <i class="fa-brands fa-facebook  ml-[5px] text-yellow-300  text-xl  cursor-pointer"></i>
+              <i class="fa-brands fa-whatsapp ml-[5px] text-yellow-300 text-xl cursor-pointer"></i>
+              <i class="fa-brands fa-youtube ml-[5px] text-yellow-300 text-xl cursor-pointer"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="flex items-center justify-center flex-wrap gap-2 border-t border-yellow-300 py-6">
+          Copyright &copy; 2024 All rights reserved <span class="text-yellow-300">By saad harera</span>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+  <i class="fa-solid fa-arrow-up fixed right-4 bottom-4 bg-yellow-300 text-lg px-3 py-1 rounded-full shadow-sm  z-50
+    hover:-translate-y-1 ease-in duration-200 kolo
+   text-black cursor-pointer hidden"></i>
+  <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+  <script src="js/scrollreveal.min.js"></script>
+  <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
